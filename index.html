@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REDACTR</title>
+    <link rel="stylesheet" href="styles/styles.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1>REDACTR - Safe Content Sharing</h1>
+      <textarea id="originalText" placeholder="Enter your text..."></textarea>
+      <input
+        type="text"
+        id="wordsToScramble"
+        placeholder="Words to scramble (separated by space)"
+      />
+      <input
+        type="text"
+        id="replacementChars"
+        placeholder="Replacement characters (e.g., ****)"
+      />
+      <button onclick="redact()">Redact Now</button>
+      <div id="redactedText"></div>
+      <div id="stats"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
